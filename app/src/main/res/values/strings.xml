@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MedicalApp</string>
+    <string name="home_intro">Bienvenue dans LifeLog</string>
+    <string name="home_description">Suivre automatiquement vos activités, definir des objectifs personnels et voir votre progrès</string>
+</resources>
