@@ -14,12 +14,15 @@
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="parent">
     </ImageView>
-    <ImageView
-        android:contentDescription="fingerprint"
+
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/finger_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_fingerprint"
+        android:layout_width="135.886dp"
+        android:layout_height="135.888dp"
+        android:layout_marginTop="25dp"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/fingerprint"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -31,7 +34,7 @@
         android:text="@string/fingerprintlogin"
         android:textColor="@color/white"
         android:textSize="14sp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="25dp"
         app:layout_constraintBottom_toTopOf="@+id/finger_btn"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
