@@ -4,28 +4,31 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.WindowManager;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    ImageView connexion_btn,registration_btn;
+    ImageButton connexion_btn,registration_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //Full screen window
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
         connexion_btn = findViewById(R.id.home_connexion);
         registration_btn =  findViewById(R.id.home_registration);
 
-        connexion_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent
-            }
+
+        connexion_btn.setOnClickListener(v -> {
+            startActivity(new Intent(this,Fingerprint_logginActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+            finish();
         });
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        registration_btn.setOnClickListener(v -> {
+            startActivity(new Intent(this,RegistrationActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+            finish();
+        });
+
     }
 }

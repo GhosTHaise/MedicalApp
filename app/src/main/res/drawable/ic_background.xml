@@ -8,10 +8,8 @@
     <clip-path
         android:pathData="M0,0h375v667h-375z"/>
     <path
-        android:pathData="M-76,316.5a432.5,350.5 0,1 0,865 0a432.5,350.5 0,1 0,-865 0z"
+        android:pathData="M356.5,-34C595.363,-34 789,122.924 789,316.5S595.363,667 356.5,667 -76,510.076 -76,316.5 117.637,-34 356.5,-34Z"
         android:strokeAlpha="0.61"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000"
         android:fillAlpha="0.61">
       <aapt:attr name="android:fillColor">
         <gradient 
@@ -26,16 +24,7 @@
       </aapt:attr>
     </path>
     <path
-        android:pathData="M-75.5,316.5a432,350 0,1 0,864 0a432,350 0,1 0,-864 0z"
-        android:strokeAlpha="0.61"
-        android:strokeWidth="1"
-        android:fillColor="#00000000"
-        android:strokeColor="#707070"
-        android:fillAlpha="0.61"/>
-    <path
-        android:pathData="M-144,253a432.5,350 0,1 0,865 0a432.5,350 0,1 0,-865 0z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000">
+        android:pathData="M-144,253a432.5,350 0,1 0,865 0a432.5,350 0,1 0,-865 0z">
       <aapt:attr name="android:fillColor">
         <gradient 
             android:startY="26.9"
@@ -48,10 +37,5 @@
         </gradient>
       </aapt:attr>
     </path>
-    <path
-        android:pathData="M-143.5,253a432,349.5 0,1 0,864 0a432,349.5 0,1 0,-864 0z"
-        android:strokeWidth="1"
-        android:fillColor="#00000000"
-        android:strokeColor="#707070"/>
   </group>
 </vector>

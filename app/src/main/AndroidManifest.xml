@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MedicalApp">
         <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
             android:name=".Fingerprint_logginActivity"
             android:exported="false" />
         <activity
