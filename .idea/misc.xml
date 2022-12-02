@@ -5,8 +5,9 @@
       <map>
         <entry key="app/src/main/res/drawable/homebackground.xml" value="0.10625" />
         <entry key="app/src/main/res/drawable/ic_background.xml" value="0.109375" />
+        <entry key="app/src/main/res/drawable/ic_connexion_button.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.109375" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.11741835147744946" />
       </map>
     </option>
   </component>
