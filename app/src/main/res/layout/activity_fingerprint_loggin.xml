@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Fingerprint_logginActivity">
     <ImageView
+        android:contentDescription="home Background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
@@ -14,11 +15,25 @@
         app:layout_constraintTop_toTopOf="parent">
     </ImageView>
     <ImageView
+        android:contentDescription="fingerprint"
+        android:id="@+id/finger_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_fingerprint"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fingerprintlogin"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/finger_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
