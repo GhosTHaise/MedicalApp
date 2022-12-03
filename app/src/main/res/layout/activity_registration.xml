@@ -13,4 +13,104 @@
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="parent">
     </ImageView>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/user_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/firstname"
+        />
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_in"
+        android:ems="10"
+        android:hint="Nom"
+        android:inputType="textPersonName"
+        android:paddingBottom="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#E1E1E1"
+        app:layout_constraintBottom_toTopOf="@+id/lastname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+    />
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_in"
+        android:ems="10"
+        android:hint="Prenom"
+        android:inputType="textPersonName"
+        android:paddingBottom="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#E1E1E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_in"
+        android:ems="10"
+        android:hint="Exemple@gmail.com"
+        android:inputType="textPersonName"
+        android:paddingBottom="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#E1E1E1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastname" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_in"
+        android:ems="10"
+        android:hint="mot de passe"
+        android:inputType="textPersonName"
+        android:paddingBottom="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#E1E1E1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <ImageButton
+        android:id="@+id/home_connexion"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/ic_connexion_button"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+    </ImageButton>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/registeredBtn"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/home_connexion"
+        app:layout_constraintBottom_toBottomOf="@+id/home_connexion"
+        app:layout_constraintLeft_toLeftOf="@id/home_connexion"
+        app:layout_constraintRight_toRightOf="@+id/home_connexion"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
