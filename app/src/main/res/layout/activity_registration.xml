@@ -5,23 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistrationActivity">
+
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
-        android:src="@drawable/ic_background"
         android:scaleType="fitXY"
-        app:layout_constraintTop_toTopOf="parent">
-    </ImageView>
+        android:src="@drawable/ic_background"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true"
         android:src="@drawable/user_white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/firstname"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
     <EditText
         android:id="@+id/firstname"
         android:layout_width="wrap_content"
@@ -30,6 +33,7 @@
         android:backgroundTintMode="src_in"
         android:ems="10"
         android:hint="Nom"
+        android:textSize="8pt"
         android:inputType="textPersonName"
         android:paddingBottom="15dp"
         android:textColor="#FFFFFF"
@@ -46,6 +50,7 @@
         android:backgroundTint="#FFFFFF"
         android:backgroundTintMode="src_in"
         android:ems="10"
+        android:textSize="8pt"
         android:hint="Prenom"
         android:inputType="textPersonName"
         android:paddingBottom="15dp"
@@ -64,6 +69,7 @@
         android:backgroundTint="#FFFFFF"
         android:backgroundTintMode="src_in"
         android:ems="10"
+        android:textSize="8pt"
         android:hint="Exemple@gmail.com"
         android:inputType="textPersonName"
         android:paddingBottom="15dp"
@@ -73,6 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lastname" />
+
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
@@ -80,8 +87,9 @@
         android:backgroundTint="#FFFFFF"
         android:backgroundTintMode="src_in"
         android:ems="10"
+        android:textSize="8pt"
         android:hint="mot de passe"
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|textPassword"
         android:paddingBottom="15dp"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
