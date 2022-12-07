@@ -36,7 +36,8 @@ public class Fingerprint_logginActivity extends AppCompatActivity {
                 x2 = touchEvent.getX();
                 y2 = touchEvent.getY();
                 if(x1 > x2){
-                    startActivity(new Intent(this,Fingerprint_logginActivity.class));
+                    startActivity(new Intent(this,RegistrationActivity.class));
+                    finish();
                 }
                 break;
         }

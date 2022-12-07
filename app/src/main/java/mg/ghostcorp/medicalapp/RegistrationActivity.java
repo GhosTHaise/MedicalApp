@@ -28,6 +28,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 y2 = touchEvent.getY();
                 if(x1 < x2){
                     startActivity(new Intent(this,Fingerprint_logginActivity.class));
+                    finish();
                 }
                 break;
         }
