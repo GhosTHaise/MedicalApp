@@ -55,6 +55,7 @@ public class DatabaseSqLite extends SQLiteOpenHelper {
             db.execSQL("DROP TABLE if EXISTS Medicaments");
             db.execSQL("DROP TABLE IF EXISTS contenir");
             db.execSQL("DROP TABLE IF EXISTS Prendre");
+
             onCreate(db);
     }
 }
